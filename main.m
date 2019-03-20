@@ -15,7 +15,7 @@ train_l2fea=norm_trainfea(:,total_layer1_features);
 %Select  Diversified Features
 if(diversity_metric_l1<diversity_metric_l2)
 diversified_trainfea=norm_trainfea(:,total_layer1_features+1:d);
-diversified_testfea=norm_testfea(:,1:total_layer1_features);
+diversified_testfea=norm_testfea(:,total_layer1_features+1:d);
 else
 diversified_trainfea=norm_trainfea(:,1:total_layer1_features);
 diversified_testfea=norm_testfea(:,1:total_layer1_features);
