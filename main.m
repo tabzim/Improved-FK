@@ -23,3 +23,6 @@ end
 %Perform Whitening transform on diversified features
 [transformed_trainfeatures,transformed_testfeatures]= whitening_transform(diversified_trainfea,diversified_test);
 %knn classifier for classification
+knn.m;
+% classification using Support Vector Machine
+svm.m;
