@@ -1,15 +1,15 @@
  %% Main file for Diversity Calculation of Fisher scores
  
-[diversity_metric]=diversify_metric(norm_trainfea,norm_testfeat)
+[diversity_metric]=diversify_metric(norm_trainfea)
  
-number_hid_uits=80;
+number_hid_units=80;
 % Calculating Theta
-dot_product=dot(train_data,train_data);
-norm_vect=norm(train_data)*norm(train_data);
+dot_product=dot(norm_trainfea,norm_trainfea);
+norm_vect=norm(norm_trainfea)*norm(norm_trainfea);
 theta=acos(dot_product/norm_vect);
 
 % Calculating Mean and Variance
-total_hid_units=(number_hiddenuits)^2;
+total_hid_units=(number_hid_units)^2;
 mean_angle=theta/total_hid_units;
 total_mean_angle=sum(mean_angle);
 variance=(theta-total_mean_angle).^2;
