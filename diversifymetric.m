@@ -1,6 +1,6 @@
  %% Main file for Diversity Calculation of Fisher scores
  
-[diversity_metric]=diversify_metric(norm_trainfea)
+function [diversity_metric]=diversify_metric(norm_trainfea)
  
 number_hid_units=80;
 % Calculating Theta
