@@ -1,15 +1,15 @@
 % This code implements the SVM classifier on BIFFSS FIsher scores on USPS data set.
 
-load('/data/usps_dbm_lastlayer.mat');
 
-Y(Y==0)=10;
-Y1(Y1==0)=10;
+
+train_labels(train_labels==0)=10;
+test_labels(test_labels==0)=10;
 
   %[train_data,train_labels,test_data,test_labels]=cross_valid(X_train,Y);
- X_train1=train_data;
- Ltrain1=Y;
- Ltest1=Y1;
-   X_test1=test_data;
+ X_train1=transformed_trainfeatures;
+ Ltrain1=train_labels;
+ Ltest1=test_labels;
+   X_test1=transformed_testfeatures;
 Xtrain1=X_train1';
 Xtest1=X_test1';
 
