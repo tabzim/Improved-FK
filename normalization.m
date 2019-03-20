@@ -1,4 +1,4 @@
- function [norm_trainfea,norm_testfeat]=normalization(train_data,test_data)
+ function [norm_trainfea,norm_testfea]=normalization(train_data,test_data)
  
  for i=1:size(train_data,1)
 train_min=min(train_data(i,:));
