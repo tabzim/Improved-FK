@@ -1,8 +1,14 @@
-This code is a Matlab implementation of Diversity Metric, K-NN and SVM specified in a submitted paper 
+This code is a Matlab implementation of Normalization, Diversity Metric, whitening transformation,K-NN and SVM specified in a submitted paper 
+==================Normalization===========================================
+in order to scale Fisher features using normalization scheme,see "normalization.m" file
+
 
 ==================Diversity Metric===========================================
 For Diversity Metric implementation, see "diversifymetric.m" file
-We  calculate diversity metric for USPS lastlayer features having 7291 training examples and 2007 test examples as specified in paper.
+We  calculate diversity metric for USPS Fisher features having 7291 training examples and 2007 test examples as specified in paper.
+
+==================Whitening Transformation===========================================
+In order to obtain discriminative features we applied whitening transformation on Fisher features, see implementaion in 'whitening_transform.m' file
 
 =======================K-nn=====================================================
 
