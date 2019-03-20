@@ -1,10 +1,8 @@
 % This file implements k-nearest neighbour on Fisher scores selected via BIFFSS.
 
-load('/data/usps_dbm_lastlayer.mat');
 
-
-mdl=fitcknn(train_data,Y);
-label=predict(mdl,test_data);
-cp=classperf(label,Y1);
+mdl=fitcknn(transformed_trainfeatures,train_labels);
+label=predict(mdl,transformed_testfeatures);
+cp=classperf(label,test_labels);
 cp.CorrectRate;
 display(cp.CorrectRate)
