@@ -25,4 +25,4 @@ end
 %knn classifier for classification
 knn.m;
 % classification using Support Vector Machine
-svm.m;
+Train_SGD_SVM;
