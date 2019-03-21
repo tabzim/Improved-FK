@@ -1,4 +1,4 @@
-This code is a Matlab implementation of Diversified Fisher Kernel. The discrimination in the kernel is induced via min-max normalization, diversity metric calculation, whitening transformation. The supremacy of the method is revealed on a toy example using k-NN and SVM classifoers. 
+This code is a Matlab implementation of Diversified Fisher Kernel. The discrimination in the kernel is induced via min-max normalization, diversity metric calculation, whitening transformation. The supremacy of the method is revealed on USPS data set using k-NN and SVM classifoers. 
 
 ==================Normalization.m ===========================================
 This function is used to scale Fisher scores using min-max normalization scheme.
