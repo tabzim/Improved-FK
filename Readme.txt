@@ -20,5 +20,5 @@ The parameters specified in the file are optimal parameters for the data at hand
  
 ===========output===========================================================
 The output given by K-NN and SVM code on Discriminative features of USPS dataset is 97.3% and 99.9%
-as  specified in Table 4.while the result given by diversity metric is 0.476 
-as mentioned in Table 1
+as  specified in Table 4 of the submitted paper. The diversity of the selected features is 0.476 
+as shown in Table 1 of the paper.
